@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MONOLIT — Zamonaviy Mebellar Studiyasi</title>
+    <meta
+      name="description"
+      content="Qora, oq va chiqarang ranglardagi zamonaviy mebellar kolleksiyasi. Har bir mahsulotni 360 daraja 3D ko'rinishda tomosha qiling va buyurtma bering."
+    />
+    <meta property="og:title" content="MONOLIT — Zamonaviy Mebellar Studiyasi" />
+    <meta
+      property="og:description"
+      content="Qora, oq va chiqarang ranglardagi zamonaviy mebellar kolleksiyasi va interaktiv 3D ko'rgazma."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F7F5F0] text-[#141414] antialiased selection:bg-[#141414] selection:text-[#F7F5F0]">
+    <!-- Top Navigation Bar (Strict 3-Zone Contract) -->
+    <header
+      id="site-header"
+      class="sticky top-0 z-40 border-b border-black/10 bg-[#F7F5F0]/95 transition-colors duration-200"
+    >
+      <div class="mx-auto flex max-w-[1360px] items-center justify-between gap-8 px-6 py-4 lg:px-10">
+        <!-- Zone 1: Single-line Brand Wordmark -->
+        <a
+          href="#top"
+          class="font-display text-2xl font-semibold tracking-tight text-[#141414] whitespace-nowrap shrink-0"
+        >
+          MONOLIT
+        </a>
+
+        <!-- Zone 2: Concise Single-Line Navigation Links -->
+        <nav
+          aria-label="Asosiy navigatsiya"
+          class="hidden items-center gap-8 text-sm font-medium text-[#4A4742] md:flex"
+        >
+          <a href="#kolleksiya" class="nav-link whitespace-nowrap shrink-0">Kolleksiya</a>
+          <a href="#studiya-3d" class="nav-link whitespace-nowrap shrink-0">3D Studiya</a>
+          <a href="#materiallar" class="nav-link whitespace-nowrap shrink-0">Materiallar</a>
+          <a href="#aloqa" class="nav-link whitespace-nowrap shrink-0">Aloqa</a>
+        </nav>
+
+        <!-- Zone 3: Single Primary Action + Mobile Menu Trigger -->
+        <div class="flex items-center gap-3 shrink-0">
+          <button
+            id="open-cart-btn"
+            type="button"
+            class="inline-flex items-center gap-2.5 rounded-lg bg-[#141414] px-4 py-2.5 text-sm font-medium text-[#F7F5F0] transition-colors duration-150 hover:bg-[#2C2A27] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#141414] whitespace-nowrap shrink-0 cursor-pointer"
+          >
+            <span>Savatcha</span>
+            <span
+              id="header-cart-count"
+              class="font-mono text-xs tabular-nums text-[#DFD3C3]"
+            >0</span>
+          </button>
+
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Menyuni ochish"
+            aria-expanded="false"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/15 text-[#141414] transition-colors hover:bg-black/5 md:hidden cursor-pointer"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-black/10 bg-[#F7F5F0] px-6 py-4 md:hidden"
+      >
+        <nav class="flex flex-col gap-3 text-sm font-medium text-[#141414]">
+          <a href="#kolleksiya" class="mobile-nav-link py-1.5">Kolleksiya</a>
+          <a href="#studiya-3d" class="mobile-nav-link py-1.5">3D Studiya</a>
+          <a href="#materiallar" class="mobile-nav-link py-1.5">Materiallar</a>
+          <a href="#aloqa" class="mobile-nav-link py-1.5">Aloqa</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero Section -->
+      <section class="border-b border-black/10">
+        <div class="mx-auto grid max-w-[1360px] grid-cols-1 items-stretch gap-8 px-6 py-10 lg:grid-cols-12 lg:gap-12 lg:px-10 lg:py-16">
+          <div class="flex flex-col justify-between gap-8 lg:col-span-5 lg:py-4">
+            <div class="space-y-6">
+              <p class="text-xs font-medium tracking-wide text-[#6E675F]">
+                Toshkent Arxitektura Mebel Studiyasi · 2026 Kolleksiya
+              </p>
+              <h1 class="font-display text-4xl leading-[1.06] font-semibold tracking-tight text-[#141414] sm:text-5xl lg:text-[3.5rem] text-balance">
+                Qora, oq va chiqarang ranglar uyg‘unligidagi zamonaviy mebellar
+              </h1>
+              <p class="max-w-[52ch] text-base leading-relaxed text-[#4A4742]">
+                Har bir detalda minimalizm va qulaylik. Mebellarni xarid qilishdan avval interaktiv
+                3D studiyamizda barcha burchaklardan aylantirib ko‘ring va bir zumda buyurtma bering.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <a
+                href="#kolleksiya"
+                class="inline-flex items-center justify-center rounded-lg bg-[#141414] px-6 py-3.5 text-sm font-medium text-[#F7F5F0] transition-colors duration-150 hover:bg-[#2C2A27] whitespace-nowrap shrink-0"
+              >
+                Kolleksiyani ko‘rish
+              </a>
+              <a
+                href="#studiya-3d"
+                class="inline-flex items-center justify-center rounded-lg border border-black/20 bg-white px-6 py-3.5 text-sm font-medium text-[#141414] transition-colors duration-150 hover:border-black/45 hover:bg-[#EAE3D7]/45 whitespace-nowrap shrink-0"
+              >
+                3D Studiyaga o‘tish
+              </a>
+            </div>
+
+            <!-- Clean Key Specifications Strip -->
+            <div class="grid grid-cols-3 gap-4 border-t border-black/10 pt-6">
+              <div>
+                <div class="font-mono text-xl font-medium tabular-nums text-[#141414]">360°</div>
+                <div class="mt-1 text-xs text-[#6E675F]">Interaktiv 3D ko‘ruv</div>
+              </div>
+              <div>
+                <div class="font-mono text-xl font-medium tabular-nums text-[#141414]">3 rang</div>
+                <div class="mt-1 text-xs text-[#6E675F]">Qora · Oq · Chiqarang</div>
+              </div>
+              <div>
+                <div class="font-mono text-xl font-medium tabular-nums text-[#141414]">24 soat</div>
+                <div class="mt-1 text-xs text-[#6E675F]">Tezkor yetkazib berish</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="relative h-full min-h-[340px] overflow-hidden rounded-xl border border-black/10 bg-[#EAE3D7]">
+              <img
+                src="/src/assets/images/hero_modern_living_1795169187195.jpg"
+                alt="Qora, oq va chiqarang ranglardagi zamonaviy mehmonxona mebellari"
+                referrerpolicy="no-referrer"
+                class="h-full w-full object-cover lg:min-h-[520px]"
+              />
+              <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent p-6 sm:p-8">
+                <div class="flex flex-wrap items-end justify-between gap-4">
+                  <div class="text-white">
+                    <p class="text-xs text-[#DFD3C3]">Flagman interyer to‘plami</p>
+                    <p class="mt-1 font-display text-2xl font-medium">Samarqand Bukle &amp; Travertin</p>
+                  </div>
+                  <button
+                    id="hero-inspect-btn"
+                    type="button"
+                    class="pointer-events-auto inline-flex items-center gap-2 rounded-lg bg-[#F7F5F0] px-4 py-2.5 text-xs font-semibold text-[#141414] transition-colors hover:bg-[#EAE3D7] whitespace-nowrap shrink-0 cursor-pointer"
+                  >
+                    <span>3D ko‘rinishda ochish</span>
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m3.27 6.96 8.73 5.05 8.73-5.05M12 22.08V12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive 3D Studio Section -->
+      <section id="studiya-3d" class="border-b border-black/10 bg-[#141414] text-[#F7F5F0]">
+        <div class="mx-auto max-w-[1360px] px-6 py-14 lg:px-10 lg:py-20">
+          <div class="mb-8 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+            <div class="space-y-3">
+              <p class="text-xs font-medium tracking-wide text-[#C8B69E]">
+                Interaktiv 3D Ko‘rgazma · Barcha tomonlama ko‘rish
+              </p>
+              <h2 class="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl text-balance">
+                Mahsulotlarni 360° burchak ostida tekshiring
+              </h2>
+            </div>
+
+            <!-- Model Selector Tabs -->
+            <div
+              id="studio-product-tabs"
+              role="tablist"
+              aria-label="3D model tanlash"
+              class="flex flex-wrap items-center gap-2"
+            ></div>
+          </div>
+
+          <!-- 3D Viewport Container (Unobstructed Center + Collapsible Bottom Control Dock) -->
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <div class="relative overflow-hidden rounded-xl border border-white/12 bg-[#1D1C1A] lg:col-span-8">
+              <div
+                id="studio-canvas-host"
+                class="relative h-[440px] w-full sm:h-[520px] lg:h-[580px]"
+              ></div>
+
+              <!-- Top-left minimal spec label (does not obstruct center) -->
+              <div class="pointer-events-none absolute top-4 left-4 z-10 rounded-lg border border-white/12 bg-[#141414]/90 px-3.5 py-2">
+                <div id="studio-hud-title" class="text-sm font-medium text-white">Buxoro Egri Divan</div>
+                <div id="studio-hud-meta" class="mt-0.5 text-xs text-[#C8B69E]">
+                  360° aylantirish uchun bosing va suring
+                </div>
+              </div>
+
+              <!-- Collapsible Bottom Control Dock -->
+              <div
+                id="studio-dock-wrapper"
+                class="absolute bottom-4 left-1/2 z-10 w-[min(92%,740px)] -translate-x-1/2 transition-transform duration-200"
+              >
+                <div class="mb-1.5 flex justify-center">
+                  <button
+                    id="studio-dock-toggle"
+                    type="button"
+                    class="inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-[#141414] px-3 py-1 text-xs font-medium text-[#DFD3C3] hover:text-white cursor-pointer whitespace-nowrap shrink-0"
+                  >
+                    <span id="studio-dock-toggle-label">Boshqaruvni yashirish</span>
+                  </button>
+                </div>
+
+                <div
+                  id="studio-dock-panel"
+                  class="flex flex-col gap-3 rounded-xl border border-white/14 bg-[#141414]/95 p-3.5 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <!-- Camera Angle Presets -->
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    <button type="button" data-cam="iso" class="studio-cam-btn is-active">3/4</button>
+                    <button type="button" data-cam="front" class="studio-cam-btn">Old</button>
+                    <button type="button" data-cam="side" class="studio-cam-btn">Yon</button>
+                    <button type="button" data-cam="back" class="studio-cam-btn">Orqa</button>
+                    <button type="button" data-cam="top" class="studio-cam-btn">Yuqori</button>
+                  </div>
+
+                  <!-- Explode & Auto-Rotate Controls -->
+                  <div class="flex flex-wrap items-center gap-4">
+                    <label class="flex items-center gap-2 text-xs text-[#DFD3C3]">
+                      <span class="whitespace-nowrap">Qismlar:</span>
+                      <input
+                        id="studio-explode-slider"
+                        type="range"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value="0"
+                        class="h-1.5 w-24 cursor-pointer accent-[#DFD3C3]"
+                      />
+                    </label>
+
+                    <button
+                      id="studio-autorotate-btn"
+                      type="button"
+                      aria-pressed="true"
+                      class="rounded-md border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-white/20 whitespace-nowrap shrink-0 cursor-pointer"
+                    >
+                      Aylanish: Yoqilgan
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Contiguous Studio Purchase Card -->
+            <aside class="flex flex-col justify-between rounded-xl border border-white/12 bg-[#1B1A18] p-6 lg:col-span-4 lg:p-8">
+              <div class="space-y-6">
+                <div>
+                  <p id="studio-info-category" class="text-xs text-[#C8B69E]">Divan · Zamonaviy seriya</p>
+                  <h3 id="studio-info-name" class="mt-2 font-display text-3xl font-semibold text-white">
+                    Buxoro Egri Divan
+                  </h3>
+                  <p id="studio-info-price" class="mt-2 font-mono text-xl font-medium tabular-nums text-[#DFD3C3]">
+                    12 800 000 so‘m
+                  </p>
+                </div>
+
+                <p id="studio-info-desc" class="text-sm leading-relaxed text-[#B9B3AA]">
+                  Yumshoq bukle mato va qora po‘lat oyoqlar bilan ishlangan uch o‘rinli mebel.
+                </p>
+
+                <!-- Color Finish Selector -->
+                <div class="space-y-2.5 border-t border-white/10 pt-5">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="text-[#B9B3AA]">Rangni tanlang</span>
+                    <span id="studio-info-color-name" class="font-medium text-white">Chiqarang</span>
+                  </div>
+                  <div id="studio-color-buttons" class="grid grid-cols-3 gap-2"></div>
+                </div>
+
+                <!-- Dimensions & Material Specs -->
+                <dl class="space-y-2.5 border-t border-white/10 pt-5 text-xs">
+                  <div class="flex items-center justify-between">
+                    <dt class="text-[#B9B3AA]">O‘lchamlari</dt>
+                    <dd id="studio-info-dims" class="font-mono tabular-nums text-white">235 × 96 × 78 sm</dd>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <dt class="text-[#B9B3AA]">Asosiy material</dt>
+                    <dd id="studio-info-material" class="text-white">Bukle &amp; Po‘lat</dd>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <dt class="text-[#B9B3AA]">Kafolat</dt>
+                    <dd class="text-white">3 yil rasmiy kafolat</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="mt-8 space-y-3 border-t border-white/10 pt-6">
+                <button
+                  id="studio-add-cart-btn"
+                  type="button"
+                  class="w-full rounded-lg bg-[#DFD3C3] px-5 py-3.5 text-sm font-semibold text-[#141414] transition-colors hover:bg-white cursor-pointer"
+                >
+                  Savatchaga qo‘shish
+                </button>
+                <button
+                  id="studio-buy-now-btn"
+                  type="button"
+                  class="w-full rounded-lg border border-white/20 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10 cursor-pointer"
+                >
+                  Tezkor buyurtma berish
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Collection Catalog -->
+      <section id="kolleksiya" class="border-b border-black/10">
+        <div class="mx-auto max-w-[1360px] px-6 py-16 lg:px-10 lg:py-20">
+          <div class="flex flex-col justify-between gap-6 border-b border-black/10 pb-8 lg:flex-row lg:items-end">
+            <div class="space-y-2">
+              <p class="text-xs font-medium text-[#6E675F]">Katalog · 2026</p>
+              <h2 class="font-display text-3xl font-semibold tracking-tight text-[#141414] sm:text-4xl">
+                Zamonaviy Mebellar Kolleksiyasi
+              </h2>
+            </div>
+
+            <!-- Search Input -->
+            <div class="relative w-full lg:w-72">
+              <input
+                id="catalog-search"
+                type="search"
+                placeholder="Mebel nomi bo‘yicha qidirish..."
+                aria-label="Mebel qidirish"
+                class="w-full rounded-lg border border-black/15 bg-white py-2.5 pr-4 pl-10 text-sm text-[#141414] placeholder:text-[#8A837A] focus:border-[#141414] focus:outline-none"
+              />
+              <svg
+                class="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-[#6E675F]"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.75"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path stroke-linecap="round" d="m20 20-3.5-3.5" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Interactive Filter Bar -->
+          <div class="mt-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+            <!-- Category Filter Buttons -->
+            <div
+              id="category-filters"
+              class="flex flex-wrap items-center gap-1.5 rounded-lg bg-[#EAE3D7]/60 p-1"
+              role="group"
+              aria-label="Kategoriyalar bo‘yicha filtrlash"
+            ></div>
+
+            <!-- Color Finish Filter Buttons -->
+            <div
+              id="color-filters"
+              class="flex flex-wrap items-center gap-2"
+              role="group"
+              aria-label="Rang bo‘yicha filtrlash"
+            ></div>
+          </div>
+
+          <!-- Product Grid -->
+          <div
+            id="product-grid"
+            class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+          ></div>
+
+          <!-- Empty Filter State -->
+          <div
+            id="empty-catalog-state"
+            class="mt-10 hidden rounded-xl border border-black/10 bg-white p-12 text-center"
+          >
+            <p class="font-display text-2xl font-medium text-[#141414]">
+              Tanlangan mezon bo‘yicha mebel topilmadi
+            </p>
+            <p class="mt-2 text-sm text-[#6E675F]">
+              Filtrlarni tozalab, barcha qora, oq va chiqarang mebellarni ko‘rishingiz mumkin.
+            </p>
+            <button
+              id="reset-filters-btn"
+              type="button"
+              class="mt-5 rounded-lg bg-[#141414] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#2C2A27] cursor-pointer"
+            >
+              Filtrlarni tiklash
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Craftsmanship & Three Signature Colors Section -->
+      <section id="materiallar" class="border-b border-black/10 bg-white">
+        <div class="mx-auto max-w-[1360px] px-6 py-16 lg:px-10 lg:py-20">
+          <div class="max-w-2xl space-y-3">
+            <p class="text-xs font-medium text-[#6E675F]">Rang Falsafasi</p>
+            <h2 class="font-display text-3xl font-semibold tracking-tight text-[#141414] sm:text-4xl text-balance">
+              Uch rangning mukammal me’moriy muvozanati
+            </h2>
+            <p class="text-sm leading-relaxed text-[#4A4742]">
+              Har bir MONOLIT mebeli interyeringizga tabiiy osoyishtalik va zamonaviy geometriya
+              olib kiruvchi uchta asosiy rang palitrasida ishlab chiqariladi.
+            </p>
+          </div>
+
+          <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <article class="rounded-xl border border-black/10 bg-[#141414] p-7 text-[#F7F5F0]">
+              <div class="flex items-center justify-between">
+                <span class="font-mono text-xs text-[#C8B69E]">01</span>
+                <span class="h-5 w-5 rounded-full border border-white/30 bg-[#111111]"></span>
+              </div>
+              <h3 class="mt-6 font-display text-2xl font-semibold">Qora — Kuygan Eman</h3>
+              <p class="mt-3 text-sm leading-relaxed text-[#B9B3AA]">
+                Kukunli mat bo‘yoq bilan qoplangan po‘lat karkas va qoraytirilgan eman yog‘ochi
+                makonga chuqur kontrast va qat’iy chiziqlar beradi.
+              </p>
+              <button
+                type="button"
+                data-jump-color="qora"
+                class="jump-color-btn mt-6 text-xs font-medium text-[#DFD3C3] underline underline-offset-4 hover:text-white cursor-pointer"
+              >
+                Qora mebellarni ko‘rish
+              </button>
+            </article>
+
+            <article class="rounded-xl border border-black/10 bg-[#F7F5F0] p-7 text-[#141414]">
+              <div class="flex items-center justify-between">
+                <span class="font-mono text-xs text-[#6E675F]">02</span>
+                <span class="h-5 w-5 rounded-full border border-black/20 bg-[#FFFFFF]"></span>
+              </div>
+              <h3 class="mt-6 font-display text-2xl font-semibold">Oq — Mat Alabaster</h3>
+              <p class="mt-3 text-sm leading-relaxed text-[#4A4742]">
+                Yorug‘likni yumshoq aks ettiruvchi mat oq gips va silliqlangan bo‘yoq yuzalari
+                xonani kengroq va nafisroq ko‘rsatadi.
+              </p>
+              <button
+                type="button"
+                data-jump-color="oq"
+                class="jump-color-btn mt-6 text-xs font-medium text-[#141414] underline underline-offset-4 hover:text-[#6E675F] cursor-pointer"
+              >
+                Oq mebellarni ko‘rish
+              </button>
+            </article>
+
+            <article class="rounded-xl border border-black/10 bg-[#EAE3D7] p-7 text-[#141414]">
+              <div class="flex items-center justify-between">
+                <span class="font-mono text-xs text-[#5B5248]">03</span>
+                <span class="h-5 w-5 rounded-full border border-black/20 bg-[#D6C7B2]"></span>
+              </div>
+              <h3 class="mt-6 font-display text-2xl font-semibold">Chiqarang — Travertin</h3>
+              <p class="mt-3 text-sm leading-relaxed text-[#4A4742]">
+                Issiq qum, qaymoq va tabiiy travertin tusidagi bukle matolar interyerga iliqlik
+                hamda taktil yumshoqlik olib kiradi.
+              </p>
+              <button
+                type="button"
+                data-jump-color="chiqarang"
+                class="jump-color-btn mt-6 text-xs font-medium text-[#141414] underline underline-offset-4 hover:text-[#5B5248] cursor-pointer"
+              >
+                Chiqarang mebellarni ko‘rish
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="aloqa" class="bg-[#F7F5F0]">
+      <div class="mx-auto flex max-w-[1360px] flex-col justify-between gap-8 px-6 py-12 lg:flex-row lg:items-center lg:px-10">
+        <div>
+          <span class="font-display text-2xl font-semibold text-[#141414]">MONOLIT</span>
+          <p class="mt-2 text-sm text-[#6E675F]">
+            Toshkent sh., Amir Temur shoh ko‘chasi 108 · Har kuni 09:00 – 21:00
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-6 text-sm text-[#4A4742]">
+          <a href="#kolleksiya" class="hover:text-[#141414]">Katalog</a>
+          <a href="#studiya-3d" class="hover:text-[#141414]">3D Studiya</a>
+          <button
+            id="footer-open-cart-btn"
+            type="button"
+            class="font-medium text-[#141414] underline underline-offset-4 hover:text-[#6E675F] cursor-pointer"
+          >
+            Buyurtma rasmiylashtirish
+          </button>
+        </div>
+
+        <p class="text-xs text-[#8A837A]">
+          © 2026 MONOLIT Mebel Studiyasi. Barcha huquqlar himoyalangan.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Dedicated Full-Detail 3D Inspection Modal -->
+    <div
+      id="product-3d-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-product-title"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 p-4 sm:p-6"
+    >
+      <div class="relative grid h-[min(90vh,760px)] w-full max-w-[1180px] grid-cols-1 overflow-hidden rounded-2xl border border-white/15 bg-[#141414] text-[#F7F5F0] lg:grid-cols-12">
+        <!-- Left/Center 3D Viewport -->
+        <div class="relative min-h-[320px] bg-[#1C1B19] lg:col-span-8">
+          <div id="modal-canvas-host" class="h-full w-full"></div>
+
+          <!-- Top-left hint -->
+          <div class="pointer-events-none absolute top-4 left-4 rounded-lg border border-white/12 bg-[#141414]/90 px-3.5 py-2">
+            <p class="text-xs text-[#DFD3C3]">Sichqoncha yoki barmoq bilan 360° aylantiring · G‘ildirak bilan yaqinlashtiring</p>
+          </div>
+
+          <!-- Collapsible Bottom Dock inside Modal -->
+          <div class="absolute bottom-4 left-1/2 z-10 w-[min(94%,560px)] -translate-x-1/2">
+            <div class="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-white/14 bg-[#141414]/95 px-3.5 py-2.5">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <button type="button" data-modal-cam="iso" class="modal-cam-btn is-active">3/4</button>
+                <button type="button" data-modal-cam="front" class="modal-cam-btn">Old</button>
+                <button type="button" data-modal-cam="side" class="modal-cam-btn">Yon</button>
+                <button type="button" data-modal-cam="back" class="modal-cam-btn">Orqa</button>
+                <button type="button" data-modal-cam="top" class="modal-cam-btn">Yuqori</button>
+              </div>
+              <div class="flex items-center gap-3">
+                <label class="flex items-center gap-2 text-xs text-[#DFD3C3]">
+                  <span>Qismlar</span>
+                  <input
+                    id="modal-explode-slider"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0"
+                    class="h-1.5 w-20 cursor-pointer accent-[#DFD3C3]"
+                  />
+                </label>
+                <button
+                  id="modal-autorotate-btn"
+                  type="button"
+                  aria-pressed="true"
+                  class="rounded-md border border-white/20 bg-white/10 px-2.5 py-1 text-xs font-medium text-white hover:bg-white/20 cursor-pointer whitespace-nowrap"
+                >
+                  Aylanish: Yoqilgan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Product Details & Actions -->
+        <div class="flex flex-col justify-between border-t border-white/10 bg-[#181715] p-6 lg:col-span-4 lg:border-t-0 lg:border-l">
+          <div class="space-y-5 overflow-y-auto pr-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p id="modal-product-category" class="text-xs text-[#C8B69E]">Kreslo</p>
+                <h3 id="modal-product-title" class="mt-1 font-display text-3xl font-semibold text-white">
+                  Mebel nomi
+                </h3>
+              </div>
+              <button
+                id="close-3d-modal-btn"
+                type="button"
+                aria-label="Yopish"
+                class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/15 text-[#DFD3C3] hover:bg-white/10 hover:text-white cursor-pointer"
+              >
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                  <path stroke-linecap="round" d="M6 6l12 12M18 6 6 18" />
+                </svg>
+              </button>
+            </div>
+
+            <p id="modal-product-price" class="font-mono text-2xl font-medium tabular-nums text-[#DFD3C3]">
+              0 so‘m
+            </p>
+            <p id="modal-product-desc" class="text-sm leading-relaxed text-[#B9B3AA]"></p>
+
+            <div class="space-y-2.5 border-t border-white/10 pt-4">
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-[#B9B3AA]">Rang varianti</span>
+                <span id="modal-color-label" class="font-medium text-white">Chiqarang</span>
+              </div>
+              <div id="modal-color-buttons" class="grid grid-cols-3 gap-2"></div>
+            </div>
+
+            <dl class="space-y-2 border-t border-white/10 pt-4 text-xs">
+              <div class="flex justify-between">
+                <dt class="text-[#B9B3AA]">O‘lcham (K × Ch × B)</dt>
+                <dd id="modal-product-dims" class="font-mono tabular-nums text-white"></dd>
+              </div>
+              <div class="flex justify-between">
+                <dt class="text-[#B9B3AA]">Material</dt>
+                <dd id="modal-product-material" class="text-white"></dd>
+              </div>
+              <div class="flex justify-between">
+                <dt class="text-[#B9B3AA]">Holati</dt>
+                <dd class="text-[#DFD3C3]">Sotuvda mavjud</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="mt-6 space-y-2.5 border-t border-white/10 pt-5">
+            <button
+              id="modal-add-cart-btn"
+              type="button"
+              class="w-full rounded-lg bg-[#DFD3C3] px-5 py-3.5 text-sm font-semibold text-[#141414] transition-colors hover:bg-white cursor-pointer"
+            >
+              Savatchaga qo‘shish
+            </button>
+            <button
+              id="modal-order-now-btn"
+              type="button"
+              class="w-full rounded-lg border border-white/20 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10 cursor-pointer"
+            >
+              Hozir buyurtma berish
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping Cart & Telegram Order Slide-Over Drawer -->
+    <div
+      id="cart-drawer-backdrop"
+      class="fixed inset-0 z-50 hidden bg-black/55 transition-opacity"
+      aria-hidden="true"
+    ></div>
+    <aside
+      id="cart-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Savatcha va buyurtma rasmiylashtirish"
+      class="fixed inset-y-0 right-0 z-50 flex w-full max-w-[460px] translate-x-full flex-col border-l border-black/10 bg-[#F7F5F0] text-[#141414] transition-transform duration-200"
+    >
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between border-b border-black/10 px-6 py-5">
+        <div>
+          <h2 class="font-display text-2xl font-semibold">Savatcha</h2>
+          <p id="cart-subtitle" class="text-xs text-[#6E675F]">0 ta mahsulot tanlangan</p>
+        </div>
+        <button
+          id="close-cart-btn"
+          type="button"
+          aria-label="Savatchani yopish"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/15 text-[#141414] hover:bg-black/5 cursor-pointer"
+        >
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Drawer Body -->
+      <div class="flex-1 overflow-y-auto px-6 py-5">
+        <!-- Empty Cart State -->
+        <div id="cart-empty-state" class="py-16 text-center">
+          <p class="font-display text-2xl font-medium text-[#141414]">Savatchangiz bo‘sh</p>
+          <p class="mt-2 text-sm text-[#6E675F]">
+            Kolleksiyadan o‘zingizga yoqqan mebelni tanlang va savatchaga qo‘shing.
+          </p>
+          <button
+            id="cart-browse-btn"
+            type="button"
+            class="mt-6 rounded-lg bg-[#141414] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#2C2A27] cursor-pointer"
+          >
+            Mebellarni ko‘rish
+          </button>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cart-items-list" class="space-y-4"></div>
+
+        <!-- Telegram Order Form (visible when cart has items) -->
+        <form id="checkout-form" class="mt-8 hidden space-y-4 border-t border-black/10 pt-6">
+          <h3 class="font-display text-xl font-semibold text-[#141414]">
+            Buyurtma ma’lumotlari
+          </h3>
+
+          <div>
+            <label for="customer-name" class="block text-xs font-medium text-[#4A4742]">
+              Ism va familiya *
+            </label>
+            <input
+              id="customer-name"
+              name="name"
+              type="text"
+              required
+              placeholder="Masalan: Azizbek Karimov"
+              class="mt-1.5 w-full rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm text-[#141414] placeholder:text-[#8A837A] focus:border-[#141414] focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="customer-phone" class="block text-xs font-medium text-[#4A4742]">
+              Telefon raqam *
+            </label>
+            <input
+              id="customer-phone"
+              name="phone"
+              type="tel"
+              required
+              placeholder="+998 90 123 45 67"
+              class="mt-1.5 w-full rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm text-[#141414] placeholder:text-[#8A837A] focus:border-[#141414] focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="customer-address" class="block text-xs font-medium text-[#4A4742]">
+              Yetkazib berish manzili *
+            </label>
+            <input
+              id="customer-address"
+              name="address"
+              type="text"
+              required
+              placeholder="Shahar, tuman, ko‘cha va uy raqami"
+              class="mt-1.5 w-full rounded-lg border border-black/15 bg-white px-3.5 py-2.5 text-sm text-[#141414] placeholder:text-[#8A837A] focus:border-[#141414] focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="customer-note" class="block text-xs font-medium text-[#4A4742]">
+              Qo‘shimcha izoh (ixtiyoriy)
+            </label>
+            <textarea
+              id="customer-note"
+              name="note"
+              rows="2"
+              placeholder="Qavat, yetkazish vaqti yoki maxsus istaklar..."
+              class="mt-1.5 w-full rounded-lg border border-black/15 bg-white px-3.5 py-2 text-sm text-[#141414] placeholder:text-[#8A837A] focus:border-[#141414] focus:outline-none"
+            ></textarea>
+          </div>
+
+          <!-- Status feedback area -->
+          <div
+            id="checkout-feedback"
+            role="status"
+            aria-live="polite"
+            class="hidden rounded-lg border p-3.5 text-xs leading-relaxed"
+          ></div>
+
+          <button
+            id="submit-order-btn"
+            type="submit"
+            class="w-full rounded-lg bg-[#141414] px-5 py-3.5 text-sm font-semibold text-[#F7F5F0] transition-colors hover:bg-[#2C2A27] disabled:cursor-not-allowed disabled:opacity-60 cursor-pointer"
+          >
+            Telegram orqali buyurtma yuborish
+          </button>
+        </form>
+
+        <!-- Order Success Receipt -->
+        <div
+          id="order-success-panel"
+          class="mt-4 hidden rounded-xl border border-black/15 bg-white p-6 space-y-4"
+        >
+          <p class="text-xs font-medium text-[#4A4742]">Buyurtma tasdiqlandi</p>
+          <h3 id="order-receipt-number" class="font-display text-2xl font-semibold text-[#141414]">
+            Buyurtma #1001 qabul qilindi
+          </h3>
+          <p id="order-receipt-status" class="text-sm leading-relaxed text-[#4A4742]"></p>
+          <div id="order-receipt-summary" class="space-y-1.5 border-t border-black/10 pt-4 text-xs text-[#4A4742]"></div>
+          <button
+            id="new-order-btn"
+            type="button"
+            class="w-full rounded-lg bg-[#141414] px-4 py-3 text-sm font-medium text-white hover:bg-[#2C2A27] cursor-pointer"
+          >
+            Yana xarid qilish
+          </button>
+        </div>
+      </div>
+
+      <!-- Drawer Footer Subtotal -->
+      <div id="cart-footer" class="hidden border-t border-black/10 bg-white px-6 py-4">
+        <div class="flex items-center justify-between text-sm">
+          <span class="text-[#6E675F]">Jami summa</span>
+          <span id="cart-subtotal" class="font-mono text-lg font-semibold tabular-nums text-[#141414]">
+            0 so‘m
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Toast Notification -->
+    <div
+      id="toast-banner"
+      role="status"
+      aria-live="polite"
+      class="pointer-events-none fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 rounded-lg border border-black/15 bg-[#141414] px-4 py-2.5 text-xs font-medium text-[#F7F5F0] shadow-lg"
+    ></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+export const COLOR_FINISHES = {
+  chiqarang: {
+    id: 'chiqarang',
+    label: 'Chiqarang',
+    swatchHex: '#D8C9B5',
+    primaryHex: 0xd8c9b5,
+    secondaryHex: 0xbba890,
+    accentHex: 0x1b1a18,
+    materialNote: 'Issiq qum bukle & travertin',
+  },
+  oq: {
+    id: 'oq',
+    label: 'Oq',
+    swatchHex: '#F4F2ED',
+    primaryHex: 0xf4f2ed,
+    secondaryHex: 0xe3dfd6,
+    accentHex: 0x262421,
+    materialNote: 'Mat alabaster & oq eman',
+  },
+  qora: {
+    id: 'qora',
+    label: 'Qora',
+    swatchHex: '#181818',
+    primaryHex: 0x1d1d1d,
+    secondaryHex: 0x2c2b29,
+    accentHex: 0xc8b69e,
+    materialNote: 'Qora anilin charm & po‘lat',
+  },
+};
+
+export const CATEGORIES = [
+  { id: 'barchasi', label: 'Barchasi' },
+  { id: 'divanlar', label: 'Divanlar' },
+  { id: 'kreslolar', label: 'Kreslolar' },
+  { id: 'stollar', label: 'Stollar' },
+  { id: 'yotoq-shkaf', label: 'Yotoq va Shkaf' },
+];
+
+export const FURNITURE_CATALOG = [
+  {
+    id: 'buxoro-egri-divan',
+    modelType: 'sofa',
+    name: 'Buxoro Egri Divan',
+    category: 'divanlar',
+    categoryLabel: 'Divan',
+    price: 12800000,
+    defaultColor: 'chiqarang',
+    colors: ['chiqarang', 'oq', 'qora'],
+    dimensions: '235 × 96 × 78 sm',
+    material: 'Bukle mato & Mat po‘lat',
+    tag: 'Eng ko‘p tanlangan',
+    image: '/src/assets/images/furniture_sofa_chiqarang_1795169186984.jpg',
+    description:
+      'Yumshoq egri suyanchiq va keng o‘rindiqqa ega uch kishilik mebel. Qora kukunli po‘lat oyoqlari bilan xonaga yengillik beradi.',
+  },
+  {
+    id: 'registon-kreslo',
+    modelType: 'chair',
+    name: 'Registon Arxitektura Kreslo',
+    category: 'kreslolar',
+    categoryLabel: 'Kreslo',
+    price: 5400000,
+    defaultColor: 'qora',
+    colors: ['qora', 'chiqarang', 'oq'],
+    dimensions: '78 × 84 × 76 sm',
+    material: 'Kuygan eman & Charm',
+    tag: 'Yangi 2026',
+    image: '/src/assets/images/furniture_chair_black_1795169188209.jpg',
+    description:
+      'Geometrik qat’iy chiziqlarga ega karkas va ergonomik egilgan suyanchiq. Mehmonxona hamda ish kabineti uchun mos.',
+  },
+  {
+    id: 'travertin-oshxona-stoli',
+    modelType: 'table',
+    name: 'Alabaster Monolit Stoli',
+    category: 'stollar',
+    categoryLabel: 'Ovqatlanish stoli',
+    price: 14500000,
+    defaultColor: 'oq',
+    colors: ['oq', 'chiqarang', 'qora'],
+    dimensions: '220 × 100 × 75 sm',
+    material: 'Tabiiy travertin & Gips poydevor',
+    tag: 'Cheklangan seriya',
+    image: '/src/assets/images/furniture_table_white_1795169189478.jpg',
+    description:
+      'Ikki haykalsimon poydevor ustiga o‘rnatilgan qalin travertin ustki qism. Sakkiz kishigacha qulay o‘tirish imkonini beradi.',
+  },
+  {
+    id: 'qum-jurnal-stoli',
+    modelType: 'coffee_table',
+    name: 'Qum Ikki Qavatli Jurnal Stoli',
+    category: 'stollar',
+    categoryLabel: 'Jurnal stoli',
+    price: 4200000,
+    defaultColor: 'chiqarang',
+    colors: ['chiqarang', 'qora', 'oq'],
+    dimensions: '105 × 105 × 38 sm',
+    material: 'Travertin & Qora po‘lat',
+    tag: 'Sotuvda mavjud',
+    image: '/src/assets/images/hero_modern_living_1795169187195.jpg',
+    description:
+      'Doira shaklidagi past bo‘yli jurnal stoli. Pastki qo‘shimcha javoni kitoblar va dekorativ buyumlar uchun qulay joy yaratadi.',
+  },
+  {
+    id: 'osiyo-fluted-komod',
+    modelType: 'console',
+    name: 'Nukus Fluted TV Konsol',
+    category: 'yotoq-shkaf',
+    categoryLabel: 'Konsol va Shkaf',
+    price: 8900000,
+    defaultColor: 'qora',
+    colors: ['qora', 'oq', 'chiqarang'],
+    dimensions: '190 × 45 × 58 sm',
+    material: 'Bo‘yalgan eman & Tosh ustki qism',
+    tag: 'Sotuvda mavjud',
+    image: '/src/assets/images/furniture_chair_black_1795169188209.jpg',
+    description:
+      'Vertikal taram-taram eshikli to‘rt bo‘limli zamonaviy konsol. Yashirin tortma mexanizmi va shovqinsiz yopilish tizimiga ega.',
+  },
+  {
+    id: 'alabaster-yotoq',
+    modelType: 'bed',
+    name: 'Toshkent Podium Yotoq',
+    category: 'yotoq-shkaf',
+    categoryLabel: 'Yotoq mebeli',
+    price: 16200000,
+    defaultColor: 'oq',
+    colors: ['oq', 'chiqarang', 'qora'],
+    dimensions: '215 × 185 × 102 sm',
+    material: 'Zig‘ir mato & Po‘lat podium',
+    tag: 'Buyurtma asosida',
+    image: '/src/assets/images/furniture_sofa_chiqarang_1795169186984.jpg',
+    description:
+      'Past podium asosli va baland yumshoq bosh qismiga ega keng ikki kishilik yotoq. Ortopedik panjara bilan jihozlangan.',
+  },
+];
+
+export function formatPriceUZS(amount) {
+  return `${Math.round(amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} so‘m`;
+}
